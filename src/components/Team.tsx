@@ -11,7 +11,7 @@ const teamMembers = [
     name: "Ryan Gichuru",
     role: "AI Research Lead",
     bio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
-    image: "/img/31c9cc5d-3020-4fbb-a009-438729b03344.JPG",
+    image: "/img/IMG_2320.jpg",
     imagePosition: "object-top scale-110"
   },
   {
@@ -32,7 +32,7 @@ const teamMembers = [
     role: "Systems Integration Lead",
     bio: "Specialist in app development, AI and data analytics, engineering, and hardware integration, ensuring seamless software-hardware alignment and effective data-driven decision-making.",
     image: "/img/WhatsApp Image May 10 2025.jpeg",
-    imagePosition: "object-[center_70%] scale-125"
+    imagePosition: "object-bottom scale-125"
   }
 ];
 
