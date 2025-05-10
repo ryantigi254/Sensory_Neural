@@ -10,14 +10,14 @@ export const GamifiedQuests: React.FC = () => (
           Play that Builds Skills
         </h2>
         <p className="mt-2 text-lg text-gray-700">
-          Growth Bounce is a therapeutic adventure prototype,<br />
-          designed for gentle sensory-friendly play.
+          Introducing <strong>Lunar Jump</strong>: a gentle adventure prototype where the Star Child bounces on a low-gravity trampoline across moonlit craters.<br />
+          A sensory-friendly cosmic journey in soft pastel skies.
         </p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <ul className="list-none space-y-4 text-gray-800">
               {[
-                ["Rhythm Bounce", "match gentle beats to guide the Star Child over trampoline safe-zones."],
+                ["Lunar Jump", "match gentle beats to guide the Star Child on a low-gravity trampoline across moonlit craters."],
                 ["Luminous Toy Hunt", "collect glowing plushies, arrange them in the Starlight Workshop."],
                 ["Co-op Cloud Rescue", "invite a peer or carer to co-pilot, practising turn-taking."],
                 ["Quiet Breath Quest", "watch colours soften as the child's heart-rate steadies."]
