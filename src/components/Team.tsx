@@ -51,11 +51,10 @@ export const Team: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="aspect-w-1 aspect-h-1 overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                  className={`w-full h-64 object-cover ${member.imagePosition || 'object-center'}`}
+              <div>
+                <img
+                  src={member.image}
+                  alt={member.name}
                 />
               </div>
               <div className="p-6">
