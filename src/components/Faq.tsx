@@ -82,7 +82,7 @@ export const Faq: React.FC = () => {
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-6">Still have questions? We're here to help.</p>
             <a 
-              href="mailto:info@sensoryneural.com" 
+              href="mailto:admin@sensoryneural.uk" 
               className="btn btn-secondary inline-flex items-center"
             >
               Contact Us
