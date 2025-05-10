@@ -7,6 +7,7 @@ import { Roadmap } from './components/Roadmap';
 import { EmailSignup } from './components/EmailSignup';
 import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
+import { GamifiedQuests } from './components/GamifiedQuests';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <GamifiedQuests />
         <Team />
         <Roadmap />
         <EmailSignup />
