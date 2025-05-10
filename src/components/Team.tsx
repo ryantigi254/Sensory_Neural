@@ -5,31 +5,34 @@ const teamMembers = [
     name: "Dr. Godwin Mwisomba",
     role: "Psychiatrist & Clinical Lead",
     bio: "Psychiatrist specializing in child and adolescent mental health, ensuring clinical relevance, ethical practices, and effective mental health integration.",
-    image: "https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/img/cd765dff-8ff4-40bd-bd4b-b8555d5ea8da.JPG"
   },
   {
     name: "Ryan Gichuru",
     role: "AI Research Lead",
     bio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
-    image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/img/31c9cc5d-3020-4fbb-a009-438729b03344.JPG",
+    imagePosition: "object-top scale-110"
   },
   {
     name: "Taofeek O. Abimbolu",
     role: "Software Engineering Lead",
     bio: "Software engineering expert skilled in Python, JavaScript, C++, backend and frontend development, and user-centered design.",
-    image: "https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG"
   },
   {
     name: "Toheeb Husain",
     role: "Full Stack Development Lead",
     bio: "Specialist in backend software development, frontend software development, app development, and IoT integrations, ensuring robust software architecture and intuitive user interfaces.",
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/img/c1c62119-aa00-4544-9eb3-3b91655d9a28.JPG",
+    imagePosition: "object-top scale-110"
   },
   {
     name: "Imaan Soliman",
     role: "Systems Integration Lead",
     bio: "Specialist in app development, AI and data analytics, engineering, and hardware integration, ensuring seamless software-hardware alignment and effective data-driven decision-making.",
-    image: "https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/img/24e8247a-fdd9-4f8b-b980-c6349eb95826.JPG",
+    imagePosition: "object-[center_70%] scale-125"
   }
 ];
 
@@ -52,7 +55,7 @@ export const Team: React.FC = () => {
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="w-full h-64 object-cover object-center"
+                  className={`w-full h-64 object-cover ${member.imagePosition || 'object-center'}`}
                 />
               </div>
               <div className="p-6">
