@@ -24,14 +24,14 @@ const teamMembers = [
     name: "Toheeb Husain",
     role: "Full Stack Development Lead",
     bio: "Specialist in backend software development, frontend software development, app development, and IoT integrations, ensuring robust software architecture and intuitive user interfaces.",
-    image: "/img/c1c62119-aa00-4544-9eb3-3b91655d9a28.JPG",
+    image: "/img/WhatsApp Image May 10 2025 copy.jpeg",
     imagePosition: "object-top scale-110"
   },
   {
     name: "Imaan Soliman",
     role: "Systems Integration Lead",
     bio: "Specialist in app development, AI and data analytics, engineering, and hardware integration, ensuring seamless software-hardware alignment and effective data-driven decision-making.",
-    image: "/img/24e8247a-fdd9-4f8b-b980-c6349eb95826.JPG",
+    image: "/img/WhatsApp Image May 10 2025.jpeg",
     imagePosition: "object-[center_70%] scale-125"
   }
 ];
