@@ -32,8 +32,14 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-indigo-300" />
-                <a href="mailto:info@sensoryneural.com" className="text-indigo-200 hover:text-white transition-colors">
-                  info@sensoryneural.com
+                <a href="mailto:info@sensoryneural.uk" className="text-indigo-200 hover:text-white transition-colors">
+                  info@sensoryneural.uk
+                </a>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 mr-2 text-indigo-300" />
+                <a href="mailto:admin@sensoryneural.uk" className="text-indigo-200 hover:text-white transition-colors">
+                  admin@sensoryneural.uk
                 </a>
               </li>
               <li className="flex items-start">
