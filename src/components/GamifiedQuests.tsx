@@ -24,7 +24,11 @@ export const GamifiedQuests: React.FC = () => (
         <span className="note text-sm text-gray-500">GDPR-compliant data, child agency, EU AI Act alignment.</span>
       </div>
       <div className="flex items-center justify-center">
-        <div className="bg-pastel-sage h-48 w-full rounded-lg" />
+        <img
+          src="/img/game-prototype.gif"
+          alt="Gameplay animation placeholder"
+          className="w-full h-auto rounded-lg"
+        />
       </div>
     </div>
   </section>
