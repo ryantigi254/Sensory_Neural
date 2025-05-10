@@ -29,7 +29,7 @@ const teamMembers = [
     name: "Imaan Soliman",
     role: "Systems Integration Lead",
     bio: "Specialist in app development, AI and data analytics, engineering, and hardware integration, ensuring seamless software-hardware alignment and effective data-driven decision-making.",
-    image: "https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    image: "/img/cd765dff-8ff4-40bd-bd4b-b8555d5ea8da.JPG"
   }
 ];
 
