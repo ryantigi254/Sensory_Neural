@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
             
             <div className="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4 max-w-xs">
               <p className="text-sm font-medium text-indigo-900">
-                SensoryNeural uses AI to create adaptive environments that respond to your child's changing sensory needs.
+                SensoryNeural uses AI to enable adaptive environments that respond to your child's changing sensory needs.
               </p>
             </div>
           </div>

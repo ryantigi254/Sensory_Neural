@@ -5,7 +5,8 @@ const teamMembers = [
     name: "Dr. Godwin Mwisomba",
     role: "Psychiatrist & Clinical Lead",
     bio: "Psychiatrist specializing in child and adolescent mental health, ensuring clinical relevance, ethical practices, and effective mental health integration.",
-    image: "/img/cd765dff-8ff4-40bd-bd4b-b8555d5ea8da.JPG"
+    image: "/img/cd765dff-8ff4-40bd-bd4b-b8555d5ea8da.JPG",
+    imagePosition: "object-top"
   },
   {
     name: "Ryan Gichuru",
@@ -50,11 +51,11 @@ export const Team: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+            <div key={index} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                className="w-full h-auto"
+                className={`w-full h-80 object-cover ${member.imagePosition || 'object-center'}`}
                 />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-indigo-900">{member.name}</h3>
