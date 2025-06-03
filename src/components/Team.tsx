@@ -70,6 +70,15 @@ export const Team: React.FC = () => {
           })}
         </div>
 
+        <div className="mt-12 text-center">
+          <a 
+            href="/team/ryan-gichuru"
+            className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-300 shadow-md hover:shadow-lg"
+          >
+            Read more about the team
+          </a>
+        </div>
+
         <div className="mt-16 text-center">
           <p className="text-gray-600 max-w-3xl mx-auto">
             We're united by a shared mission: to create technology that truly understands and adapts to the
