@@ -39,22 +39,63 @@ export const teamProfiles: TeamMemberProfileData[] = [
     name: "Toheeb A. Husain",
     sections: [
       {
-        title: "Why I Joined SensoryNeural", // Assuming this is the intent for Toheeb's first paragraph
+        title: "Why I Joined SensoryNeural",
         content: "As a Computer Science student with a consistently innovative mindset and a deep passion for technology, I am always seeking ways to contribute positively to society's safety and well-being. Upon seeing the announcement for the Elevate Great AI competition from the AI Society—of which I am an active member—I did not perceive it merely as a competition, but as a valuable opportunity to be part of a team that strives to make a meaningful impact on people's lives through technological innovation."
       },
       {
-        title: "My Relevant Experience", // Assuming for the second paragraph
+        title: "My Relevant Experience",
         content: "Artificial Intelligence represents both the present and the future of technology. I bring relevant experience in this field: I hold a Microsoft AI certification and have gained practical experience by integrating an AI chatbot into a website. In addition, I have completed several individual projects using cutting-edge technologies such as Next.js, MySQL, and Oracle SQL, and have also collaborated on group projects with my peers."
       },
       {
-        title: "What I Bring to the Team", // Assuming for the third paragraph
+        title: "What I Bring to the Team",
         content: "I consider myself a versatile and dynamic individual, capable of excelling both independently and in team environments. I possess strong soft skills, including leadership, effective communication, and the ability to motivate others—qualities that enable me to foster a collaborative and productive atmosphere within any group I am part of."
       },
       {
-        title: "My Vision", // Assuming for the last paragraph
+        title: "My Vision for SensoryNeural",
         content: "I believe that SensoryNeural has the potential to evolve beyond this competition into a viable real-world project. What the SensoryNeural team needs is the necessary support, mentorship, and funding to bring our vision and ideas to life."
       }
     ]
+  },
+  {
+    id: "godwin-mwisomba",
+    name: "Dr. Godwin Mwisomba",
+    sections: [
+      {
+        title: "About Me",
+        content: "Profile information for Dr. Godwin Mwisomba coming soon."
+      },
+      {
+        title: "My Role in SensoryNeural",
+        content: "Details about Dr. Mwisomba's contributions will be updated here."
+      }
+    ]
+  },
+  {
+    id: "taofeek-abimbolu",
+    name: "Taofeek O. Abimbolu",
+    sections: [
+      {
+        title: "About Me",
+        content: "Profile information for Taofeek O. Abimbolu coming soon."
+      },
+      {
+        title: "My Role in SensoryNeural",
+        content: "Details about Taofeek's contributions will be updated here."
+      }
+    ]
+  },
+  {
+    id: "imaan-soliman",
+    name: "Imaan Soliman",
+    sections: [
+      {
+        title: "About Me",
+        content: "Profile information for Imaan Soliman coming soon."
+      },
+      {
+        title: "My Role in SensoryNeural",
+        content: "Details about Imaan's contributions will be updated here."
+      }
+    ]
   }
-  // Add other team member profiles here
 ]; 
