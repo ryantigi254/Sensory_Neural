@@ -72,7 +72,7 @@ export const Team: React.FC = () => {
 
         <div className="mt-12 text-center">
           <a 
-            href="/team/ryan-gichuru"
+            href="/team"
             className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors duration-300 shadow-md hover:shadow-lg"
           >
             Read more about the team
