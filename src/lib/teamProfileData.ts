@@ -6,8 +6,10 @@ export interface ProfileSection {
 export interface TeamMemberProfileData {
   id: string; // To be used for URL slugs or keys
   name: string;
-  // title?: string; // Optional: if different from Team.tsx role
-  profileImage?: string; // Optional: if different or needed here
+  role: string; // For the card display
+  cardBio: string; // Short bio for the card display
+  profileImage: string; // Image path for the card, now mandatory
+  imagePosition?: string; // Tailwind class for object-position on card image
   sections: ProfileSection[];
 }
 
@@ -15,6 +17,10 @@ export const teamProfiles: TeamMemberProfileData[] = [
   {
     id: "ryan-gichuru",
     name: "Ryan Gichuru",
+    role: "AI Research Lead",
+    cardBio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
+    profileImage: "/img/IMG_2320.jpg",
+    imagePosition: "object-[20px_center] scale-110",
     sections: [
       {
         title: "Why I Joined SensoryNeural",
@@ -37,6 +43,10 @@ export const teamProfiles: TeamMemberProfileData[] = [
   {
     id: "toheeb-husain",
     name: "Toheeb A. Husain",
+    role: "Full Stack Development Lead",
+    cardBio: "Specialist in backend software development, frontend software development, app development, and IoT integrations, ensuring robust software architecture and intuitive user interfaces.",
+    profileImage: "/img/WhatsApp Image May 10 2025 copy.jpeg",
+    imagePosition: "object-bottom scale-110",
     sections: [
       {
         title: "Why I Joined SensoryNeural",
@@ -59,42 +69,54 @@ export const teamProfiles: TeamMemberProfileData[] = [
   {
     id: "godwin-mwisomba",
     name: "Dr. Godwin Mwisomba",
+    role: "Psychiatrist & Clinical Lead",
+    cardBio: "Psychiatrist specializing in child and adolescent mental health, ensuring clinical relevance, ethical practices, and effective mental health integration.",
+    profileImage: "/img/cd765dff-8ff4-40bd-bd4b-b8555d5ea8da.JPG",
+    imagePosition: "object-left-top",
     sections: [
       {
         title: "About Me",
-        content: "Profile information for Dr. Godwin Mwisomba coming soon."
+        content: "Profile information for Dr. Godwin Mwisomba coming soon. As the Psychiatrist & Clinical Lead, I ensure our solutions are grounded in clinical best practices and prioritize the mental well-being of children."
       },
       {
         title: "My Role in SensoryNeural",
-        content: "Details about Dr. Mwisomba's contributions will be updated here."
+        content: "Details about Dr. Mwisomba's contributions will be updated here. My focus is on the ethical integration of AI, clinical relevance of our adaptive environments, and providing expert guidance on child and adolescent mental health."
       }
     ]
   },
   {
     id: "taofeek-abimbolu",
     name: "Taofeek O. Abimbolu",
+    role: "Software Engineering Lead",
+    cardBio: "Software engineering expert skilled in Python, JavaScript, C++, backend and frontend development, and user-centered design.",
+    profileImage: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG",
+    imagePosition: "object-[center_90%]",
     sections: [
       {
         title: "About Me",
-        content: "Profile information for Taofeek O. Abimbolu coming soon."
+        content: "Profile information for Taofeek O. Abimbolu coming soon. As the Software Engineering Lead, I am passionate about building robust and scalable systems that deliver a seamless user experience."
       },
       {
         title: "My Role in SensoryNeural",
-        content: "Details about Taofeek's contributions will be updated here."
+        content: "Details about Taofeek's contributions will be updated here. I oversee the technical architecture of our software, ensuring best practices in development, and leading the engineering efforts to bring our designs to life."
       }
     ]
   },
   {
     id: "imaan-soliman",
     name: "Imaan Soliman",
+    role: "Systems Integration Lead",
+    cardBio: "Specialist in app development, AI and data analytics, engineering, and hardware integration, ensuring seamless software-hardware alignment and effective data-driven decision-making.",
+    profileImage: "/img/WhatsApp Image May 10 2025.jpeg",
+    imagePosition: "object-bottom scale-125",
     sections: [
       {
         title: "About Me",
-        content: "Profile information for Imaan Soliman coming soon."
+        content: "Profile information for Imaan Soliman coming soon. As the Systems Integration Lead, I focus on the synergy between our software, hardware, and AI components to create a cohesive and effective solution."
       },
       {
         title: "My Role in SensoryNeural",
-        content: "Details about Imaan's contributions will be updated here."
+        content: "Details about Imaan's contributions will be updated here. My work involves ensuring our app, AI models, and any hardware components work together flawlessly, and leveraging data analytics for continuous improvement."
       }
     ]
   }
