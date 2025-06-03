@@ -20,7 +20,7 @@ const teamMembers = [
     role: "Software Engineering Lead",
     bio: "Software engineering expert skilled in Python, JavaScript, C++, backend and frontend development, and user-centered design.",
     image: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG",
-    imagePosition: "object-top"
+    imagePosition: "object-bottom"
   },
   {
     name: "Toheeb Husain",
