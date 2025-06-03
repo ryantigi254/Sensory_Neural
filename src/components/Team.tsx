@@ -50,20 +50,23 @@ export const Team: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={member.name} 
-                className={`w-full h-80 object-cover ${member.imagePosition || 'object-center'}`}
-                />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-indigo-900">{member.name}</h3>
-                <p className="text-indigo-600 mb-2">{member.role}</p>
-                <p className="text-gray-600 text-sm">{member.bio}</p>
+          {teamMembers.map((member, index) => {
+            const imageHeightClass = (member.name === "Toheeb Husain" || member.name === "Imaan Soliman") ? "h-96" : "h-80";
+            return (
+              <div key={index} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className={`w-full ${imageHeightClass} object-cover ${member.imagePosition || 'object-center'}`}
+                  />
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-indigo-900">{member.name}</h3>
+                  <p className="text-indigo-600 mb-2">{member.role}</p>
+                  <p className="text-gray-600 text-sm">{member.bio}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-16 text-center">
