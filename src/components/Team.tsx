@@ -13,7 +13,7 @@ const teamMembers = [
     role: "AI Research Lead",
     bio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
     image: "/img/IMG_2320.jpg",
-    imagePosition: "object-[-20px_center] scale-110"
+    imagePosition: "object-[20px_center] scale-110"
   },
   {
     name: "Taofeek O. Abimbolu",
