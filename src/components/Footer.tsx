@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
         
         <div className="pt-8 border-t border-indigo-800 text-center text-indigo-400 text-sm">
           <p className="mb-4">
-            SensoryNeural is a proud semi-finalist in the Elevate Great AI Competition.
+            SensoryNeural is a proud finalist in the Elevate Great AI Competition.
           </p>
           <p>
             &copy; {new Date().getFullYear()} SensoryNeural Inc. All rights reserved.

@@ -9,7 +9,7 @@ export const Hero: React.FC = () => {
           <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pr-8">
             <div className="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-sm text-indigo-700 mb-4">
               <Award className="h-4 w-4 mr-1" />
-              <span>Semi-Finalist in the Elevate Great AI Competition</span>
+              <span>Finalist in the Elevate Great AI Competition</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-indigo-900 leading-tight mb-4">

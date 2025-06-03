@@ -2,14 +2,14 @@ import React from 'react';
 
 const milestones = [
   {
-    date: "Q2 2025",
+    date: "Q3 2025",
     title: "Research & Development",
     description: "Sensor development, algorithm training, and initial prototyping.",
-    isActive: true,
+    isActive: false,
     isCompleted: true
   },
   {
-    date: "Q3 2025",
+    date: "Q2 2025",
     title: "Elevate Great AI Competition Finals",
     description: "SensoryNeural competing as a finalist with live demonstration.",
     isActive: true,
@@ -24,8 +24,8 @@ const milestones = [
   },
   {
     date: "Q1 2026",
-    title: "Product Launch",
-    description: "Initial commercial release and expanded availability.",
+    title: "Pilot Launch Program",
+    description: "Initial release to 50 beta families and clinical partners with BYOD solution.",
     isActive: false,
     isCompleted: false
   }
