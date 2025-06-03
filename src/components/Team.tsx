@@ -13,14 +13,14 @@ const teamMembers = [
     role: "AI Research Lead",
     bio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
     image: "/img/IMG_2320.jpg",
-    imagePosition: "object-left scale-110"
+    imagePosition: "object-[-20px_center] scale-110"
   },
   {
     name: "Taofeek O. Abimbolu",
     role: "Software Engineering Lead",
     bio: "Software engineering expert skilled in Python, JavaScript, C++, backend and frontend development, and user-centered design.",
     image: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG",
-    imagePosition: "object-bottom"
+    imagePosition: "object-[center_90%]"
   },
   {
     name: "Toheeb Husain",
