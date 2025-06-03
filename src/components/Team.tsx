@@ -26,7 +26,7 @@ const teamMembers = [
     role: "Full Stack Development Lead",
     bio: "Specialist in backend software development, frontend software development, app development, and IoT integrations, ensuring robust software architecture and intuitive user interfaces.",
     image: "/img/WhatsApp Image May 10 2025 copy.jpeg",
-    imagePosition: "object-top scale-110"
+    imagePosition: "object-bottom scale-110"
   },
   {
     name: "Imaan Soliman",
@@ -53,7 +53,7 @@ export const Team: React.FC = () => {
           {teamMembers.map((member, index) => {
             const imageHeightClass = (member.name === "Toheeb Husain" || member.name === "Imaan Soliman") ? "h-96" : "h-80";
             return (
-              <div key={index} className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                   <img 
                     src={member.image} 
                     alt={member.name} 
