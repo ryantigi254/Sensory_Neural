@@ -6,21 +6,21 @@ const teamMembers = [
     role: "Psychiatrist & Clinical Lead",
     bio: "Psychiatrist specializing in child and adolescent mental health, ensuring clinical relevance, ethical practices, and effective mental health integration.",
     image: "/img/cd765dff-8ff4-40bd-bd4b-b8555d5ea8da.JPG",
-    imagePosition: "object-top"
+    imagePosition: "object-left-top"
   },
   {
     name: "Ryan Gichuru",
     role: "AI Research Lead",
     bio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
     image: "/img/IMG_2320.jpg",
-    imagePosition: "object-center scale-110"
+    imagePosition: "object-left scale-110"
   },
   {
     name: "Taofeek O. Abimbolu",
     role: "Software Engineering Lead",
     bio: "Software engineering expert skilled in Python, JavaScript, C++, backend and frontend development, and user-centered design.",
     image: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG",
-    imagePosition: "object-center"
+    imagePosition: "object-top"
   },
   {
     name: "Toheeb Husain",
