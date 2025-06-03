@@ -13,13 +13,14 @@ const teamMembers = [
     role: "AI Research Lead",
     bio: "AI specialist proficient in machine learning, large language models (LLMs), retrieval-augmented generation (RAG), and AI frameworks including TensorFlow, PyTorch, and Scikit-Learn.",
     image: "/img/IMG_2320.jpg",
-    imagePosition: "object-top scale-110"
+    imagePosition: "object-center scale-110"
   },
   {
     name: "Taofeek O. Abimbolu",
     role: "Software Engineering Lead",
     bio: "Software engineering expert skilled in Python, JavaScript, C++, backend and frontend development, and user-centered design.",
-    image: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG"
+    image: "/img/41079fc9-a165-439f-ae74-b755beab929b.JPG",
+    imagePosition: "object-center"
   },
   {
     name: "Toheeb Husain",
@@ -53,7 +54,7 @@ export const Team: React.FC = () => {
           {teamMembers.map((member, index) => {
             const imageHeightClass = (member.name === "Toheeb Husain" || member.name === "Imaan Soliman") ? "h-96" : "h-80";
             return (
-              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div key={index} className="bg-white rounded-xl shadow-2xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
                   <img 
                     src={member.image} 
                     alt={member.name} 
