@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Brain, Menu, X } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
@@ -14,6 +15,10 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleMobileLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -21,25 +26,23 @@ export const Navbar: React.FC = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between">
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           <div className="mr-2 text-indigo-600">
             <Brain size={32} />
           </div>
           <div>
             <span className="text-xl font-bold text-indigo-900">SensoryNeural</span>
           </div>
-        </a>
+        </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-700 hover:text-indigo-600 transition-colors">Features</a>
-          <a href="#team" className="text-gray-700 hover:text-indigo-600 transition-colors">Team</a>
-          <a href="#roadmap" className="text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</a>
-          <a href="#faq" className="text-gray-700 hover:text-indigo-600 transition-colors">FAQ</a>
-          <a href="#signup" className="btn btn-primary">Join Waitlist</a>
+          <a href="/#features" className="text-gray-700 hover:text-indigo-600 transition-colors">Features</a>
+          <Link to="/team" className="text-gray-700 hover:text-indigo-600 transition-colors">Team</Link>
+          <a href="/#roadmap" className="text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</a>
+          <a href="/#faq" className="text-gray-700 hover:text-indigo-600 transition-colors">FAQ</a>
+          <a href="/#signup" className="btn btn-primary">Join Waitlist</a>
         </div>
 
-        {/* Mobile Menu Button */}
         <button 
           className="md:hidden text-gray-700"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -48,15 +51,14 @@ export const Navbar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white">
           <div className="container-custom py-4 space-y-4">
-            <a href="#features" className="block text-gray-700 hover:text-indigo-600 transition-colors">Features</a>
-            <a href="#team" className="block text-gray-700 hover:text-indigo-600 transition-colors">Team</a>
-            <a href="#roadmap" className="block text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</a>
-            <a href="#faq" className="block text-gray-700 hover:text-indigo-600 transition-colors">FAQ</a>
-            <a href="#signup" className="btn btn-primary w-full justify-center">Join Waitlist</a>
+            <a href="/#features" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Features</a>
+            <Link to="/team" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Team</Link>
+            <a href="/#roadmap" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</a>
+            <a href="/#faq" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">FAQ</a>
+            <a href="/#signup" onClick={handleMobileLinkClick} className="btn btn-primary w-full justify-center">Join Waitlist</a>
           </div>
         </div>
       )}

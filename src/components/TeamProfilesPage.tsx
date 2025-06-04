@@ -21,9 +21,7 @@ export const TeamProfilesPage: React.FC = () => {
 
   const handleCardClick = (profileId: string) => {
     const newExpandedId = expandedId === profileId ? null : profileId;
-    setExpandedId(newExpandedId); // Update local state first
-
-    // Update the URL to reflect the expansion state
+    setExpandedId(newExpandedId);
     if (newExpandedId) {
       navigate(`/team/${newExpandedId}`, { replace: true });
     } else {
@@ -59,8 +57,7 @@ export const TeamProfilesPage: React.FC = () => {
           return (
             <div key={profile.id} className="flex flex-col">
               <div 
-                className={`bg-white rounded-xl shadow-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer ${isExpanded ? 'ring-4 ring-indigo-500 ring-offset-2' : ''}`}
-                onClick={() => handleCardClick(profile.id)}
+                className={`bg-white rounded-xl shadow-2xl transition-all duration-300 overflow-hidden ${isExpanded ? 'ring-4 ring-indigo-500 ring-offset-2' : 'hover:shadow-2xl'}`}
               >
                 <img 
                   src={profile.profileImage} 
@@ -70,7 +67,13 @@ export const TeamProfilesPage: React.FC = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-indigo-900">{profile.name}</h3>
                   <p className="text-indigo-600 mb-2">{profile.role}</p>
-                  <p className="text-gray-600 text-sm">{profile.cardBio}</p>
+                  <p className="text-gray-600 text-sm mb-4">{profile.cardBio}</p>
+                  <button
+                    onClick={() => handleCardClick(profile.id)}
+                    className="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300 shadow-md hover:shadow-lg text-sm"
+                  >
+                    {isExpanded ? 'Hide details' : 'Read more'}
+                  </button>
                 </div>
               </div>
 
