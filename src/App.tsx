@@ -14,13 +14,13 @@ import { TeamProfilesPage } from './components/TeamProfilesPage';
 // A new component to represent your main page layout
 const MainPageLayout = () => (
   <>
-    <Hero />
-    <Features />
-    <GamifiedQuests />
-    <Team />
-    <Roadmap />
-    <EmailSignup />
-    <Faq />
+        <Hero />
+        <Features />
+        <GamifiedQuests />
+        <Team />
+        <Roadmap />
+        <EmailSignup />
+        <Faq />
   </>
 );
 
@@ -37,9 +37,9 @@ function App() {
             {/* Add a catch-all route for 404 if desired, or handle it within TeamProfilesPage for /team/* paths */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>
-        </main>
-        <Footer />
-      </div>
+      </main>
+      <Footer />
+    </div>
     </Router>
   );
 }

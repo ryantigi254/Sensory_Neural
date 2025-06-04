@@ -51,11 +51,36 @@ export const TeamProfilesPage: React.FC = () => {
   }
 
   // Display the grid of team members if no memberIdFromUrl (i.e., on /team)
+
+  // Create a new array with the desired order for team members
+  const sortedProfiles: TeamMemberProfileData[] = [];
+  const memberIdsInOrder = [
+    "godwin-mwisomba",
+    "ryan-gichuru",
+    "taofeek-abimbolu",
+    "imaan-soliman",
+    "toheeb-husain"
+  ];
+
+  memberIdsInOrder.forEach(id => {
+    const profile = teamProfiles.find(p => p.id === id);
+    if (profile) {
+      sortedProfiles.push(profile);
+    }
+  });
+
+  // Fallback for any members not in memberIdsInOrder (though ideally all should be)
+  teamProfiles.forEach(p => {
+    if (!sortedProfiles.find(sp => sp.id === p.id)) {
+      sortedProfiles.push(p);
+    }
+  });
+
   return (
     <div className="container-custom py-12">
       <h1 className="text-4xl font-bold text-center text-indigo-900 mb-12">Meet Our Team</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-start">
-        {teamProfiles.map(profile => {
+        {sortedProfiles.map(profile => {
           const imageHeightClass = (profile.name === "Toheeb A. Husain" || profile.name === "Imaan Soliman") ? "h-96" : "h-80";
           
           return (

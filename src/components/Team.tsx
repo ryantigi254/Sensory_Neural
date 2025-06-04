@@ -18,20 +18,20 @@ export const Team: React.FC = () => {
             const imageHeightClass = (member.name === "Toheeb A. Husain" || member.name === "Imaan Soliman") ? "h-96" : "h-80";
             return (
               <div key={index} className="bg-white rounded-xl shadow-2xl hover:shadow-2xl transition-shadow duration-300 overflow-hidden">
-                  <img 
+                <img 
                     src={member.profileImage}
-                    alt={member.name} 
+                  alt={member.name} 
                     className={`w-full ${imageHeightClass} object-cover ${member.imagePosition || 'object-center'}`}
-                  />
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-indigo-900">{member.name}</h3>
-                  <p className="text-indigo-600 mb-2">{member.role}</p>
+                />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-indigo-900">{member.name}</h3>
+                <p className="text-indigo-600 mb-2">{member.role}</p>
                   <p className="text-gray-600 text-sm">{member.cardBio}</p>
                 </div>
               </div>
             );
           })}
-        </div>
+            </div>
 
         <div className="mt-12 text-center">
           <a 
