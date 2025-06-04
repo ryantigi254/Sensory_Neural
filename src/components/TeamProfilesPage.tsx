@@ -51,13 +51,13 @@ export const TeamProfilesPage: React.FC = () => {
   return (
     <div className="container-custom py-12">
       <h1 className="text-4xl font-bold text-center text-indigo-900 mb-12">Meet Our Team</h1>
-      <div className="flex flex-col items-center gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
         {teamProfiles.map(profile => {
           const imageHeightClass = (profile.name === "Toheeb A. Husain" || profile.name === "Imaan Soliman") ? "h-96" : "h-80";
           const isExpanded = expandedId === profile.id;
 
           return (
-            <div key={profile.id} className="w-full max-w-2xl">
+            <div key={profile.id} className="flex flex-col">
               <div 
                 className={`bg-white rounded-xl shadow-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer ${isExpanded ? 'ring-4 ring-indigo-500 ring-offset-2' : ''}`}
                 onClick={() => handleCardClick(profile.id)}
@@ -75,10 +75,8 @@ export const TeamProfilesPage: React.FC = () => {
               </div>
 
               {isExpanded && (
-                <div className="-mt-1 pt-0 bg-white rounded-b-xl shadow-2xl overflow-hidden">
-                  <div className="border-t border-gray-200">
-                    <TeamMemberFullProfile profile={profile} />
-                  </div>
+                <div className="mt-4 bg-white rounded-xl shadow-xl p-6 border border-gray-200">
+                  <TeamMemberFullProfile profile={profile} />
                 </div>
               )}
             </div>
