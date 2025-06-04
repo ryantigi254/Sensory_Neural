@@ -36,11 +36,11 @@ export const Navbar: React.FC = () => {
         </Link>
 
         <div className="hidden md:flex items-center space-x-8">
-          <a href="/#features" className="text-gray-700 hover:text-indigo-600 transition-colors">Features</a>
+          <Link to="/#features" className="text-gray-700 hover:text-indigo-600 transition-colors">Features</Link>
           <Link to="/team" className="text-gray-700 hover:text-indigo-600 transition-colors">Team</Link>
-          <a href="/#roadmap" className="text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</a>
-          <a href="/#faq" className="text-gray-700 hover:text-indigo-600 transition-colors">FAQ</a>
-          <a href="/#signup" className="btn btn-primary">Join Waitlist</a>
+          <Link to="/#roadmap" className="text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</Link>
+          <Link to="/#faq" className="text-gray-700 hover:text-indigo-600 transition-colors">FAQ</Link>
+          <Link to="/#signup" className="btn btn-primary">Join Waitlist</Link>
         </div>
 
         <button 
@@ -54,11 +54,11 @@ export const Navbar: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white">
           <div className="container-custom py-4 space-y-4">
-            <a href="/#features" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Features</a>
+            <Link to="/#features" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Features</Link>
             <Link to="/team" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Team</Link>
-            <a href="/#roadmap" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</a>
-            <a href="/#faq" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">FAQ</a>
-            <a href="/#signup" onClick={handleMobileLinkClick} className="btn btn-primary w-full justify-center">Join Waitlist</a>
+            <Link to="/#roadmap" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">Roadmap</Link>
+            <Link to="/#faq" onClick={handleMobileLinkClick} className="block text-gray-700 hover:text-indigo-600 transition-colors">FAQ</Link>
+            <Link to="/#signup" onClick={handleMobileLinkClick} className="btn btn-primary w-full justify-center">Join Waitlist</Link>
           </div>
         </div>
       )}

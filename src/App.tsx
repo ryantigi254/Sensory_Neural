@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Features } from './components/Features';
@@ -12,17 +12,34 @@ import { GamifiedQuests } from './components/GamifiedQuests';
 import { TeamProfilesPage } from './components/TeamProfilesPage';
 
 // A new component to represent your main page layout
-const MainPageLayout = () => (
-  <>
-        <Hero />
-        <Features />
-        <GamifiedQuests />
-        <Team />
-        <Roadmap />
-        <EmailSignup />
-        <Faq />
-  </>
-);
+const MainPageLayout = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash) {
+      const id = location.hash.substring(1); // Remove #
+      // Delay scrolling slightly to ensure the element is rendered
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // 100ms delay, adjust if needed
+    }
+  }, [location.pathname, location.hash]);
+
+  return (
+    <>
+      <Hero />
+      <Features />
+      <GamifiedQuests />
+      <Team />
+      <Roadmap />
+      <EmailSignup />
+      <Faq />
+    </>
+  );
+};
 
 function App() {
   return (
@@ -37,9 +54,9 @@ function App() {
             {/* Add a catch-all route for 404 if desired, or handle it within TeamProfilesPage for /team/* paths */}
             {/* <Route path="*" element={<NotFoundPage />} /> */}
           </Routes>
-      </main>
-      <Footer />
-    </div>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
